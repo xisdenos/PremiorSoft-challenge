@@ -7,7 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RequesterView: UIViewController {
+    
+    var fisrtScreen: FirstScreen?
+    
+    override func loadView() {
+        super.loadView()
+        self.fisrtScreen = FirstScreen()
+        self.view = self.fisrtScreen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
