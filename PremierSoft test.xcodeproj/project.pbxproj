@@ -13,6 +13,7 @@
 		0654F0E927F41C4200988E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0654F0E827F41C4200988E6C /* Assets.xcassets */; };
 		0654F0EC27F41C4200988E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0654F0EA27F41C4200988E6C /* LaunchScreen.storyboard */; };
 		0654F0F727F41D6B00988E6C /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F0F627F41D6B00988E6C /* FirstScreen.swift */; };
+		0654F0FE27F51A8900988E6C /* ApiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F0FD27F51A8900988E6C /* ApiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0654F0EB27F41C4200988E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0654F0ED27F41C4200988E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0654F0F627F41D6B00988E6C /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		0654F0FD27F51A8900988E6C /* ApiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0654F0DE27F41C4100988E6C /* PremierSoft test */ = {
 			isa = PBXGroup;
 			children = (
+				0654F0F827F5136700988E6C /* APITableViewPage */,
 				0654F0F327F41D2700988E6C /* FirstPage */,
 				0654F0DF27F41C4100988E6C /* AppDelegate.swift */,
 				0654F0E127F41C4100988E6C /* SceneDelegate.swift */,
@@ -89,6 +92,30 @@
 				0654F0F627F41D6B00988E6C /* FirstScreen.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0654F0F827F5136700988E6C /* APITableViewPage */ = {
+			isa = PBXGroup;
+			children = (
+				0654F0FA27F5139500988E6C /* Controller */,
+				0654F0F927F5138E00988E6C /* View */,
+			);
+			path = APITableViewPage;
+			sourceTree = "<group>";
+		};
+		0654F0F927F5138E00988E6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0654F0FA27F5139500988E6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0654F0FD27F51A8900988E6C /* ApiTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +191,7 @@
 				0654F0F727F41D6B00988E6C /* FirstScreen.swift in Sources */,
 				0654F0E427F41C4100988E6C /* ViewController.swift in Sources */,
 				0654F0E027F41C4100988E6C /* AppDelegate.swift in Sources */,
+				0654F0FE27F51A8900988E6C /* ApiTableViewController.swift in Sources */,
 				0654F0E227F41C4100988E6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

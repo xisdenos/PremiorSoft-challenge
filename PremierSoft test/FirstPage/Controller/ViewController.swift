@@ -30,7 +30,8 @@ class RequesterView: UIViewController {
 extension RequesterView: registerActionProtocol {
     
     func requestAPI() {
-        //self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
+        let vc: UIViewController = ApiTableViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
