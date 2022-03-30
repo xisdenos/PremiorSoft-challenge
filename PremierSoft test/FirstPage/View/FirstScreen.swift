@@ -7,11 +7,18 @@
 
 import UIKit
 
-protocol registerActionProtocol {
+protocol registerActionProtocol: AnyObject {
     func requestAPI()
 }
 
 class FirstScreen: UIView {
+    
+    private weak var delegate: registerActionProtocol?
+    
+    func delegate(delegate: registerActionProtocol?) {
+        self.delegate = delegate
+    }
+    
     
     lazy var requestLabel: UILabel = {
         let label = UILabel()
@@ -47,7 +54,8 @@ class FirstScreen: UIView {
     }
     
     @objc func tappedRequestButton() {
-        
+        print("tapped")
+        self.delegate?.requestAPI()
     }
     
     required init?(coder: NSCoder) {

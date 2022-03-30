@@ -9,6 +9,7 @@ import UIKit
 
 class RequesterView: UIViewController {
     
+    
     var fisrtScreen: FirstScreen?
     
     override func loadView() {
@@ -20,8 +21,16 @@ class RequesterView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.fisrtScreen?.delegate(delegate: self)
     }
 
 
+}
+
+extension RequesterView: registerActionProtocol {
+    
+    func requestAPI() {
+        //self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
+    }
 }
 
