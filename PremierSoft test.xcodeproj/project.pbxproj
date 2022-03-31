@@ -14,6 +14,9 @@
 		0654F0EC27F41C4200988E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0654F0EA27F41C4200988E6C /* LaunchScreen.storyboard */; };
 		0654F0F727F41D6B00988E6C /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F0F627F41D6B00988E6C /* FirstScreen.swift */; };
 		0654F0FE27F51A8900988E6C /* ApiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F0FD27F51A8900988E6C /* ApiTableViewController.swift */; };
+		0654F10027F51B8300988E6C /* ApiTableViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F0FF27F51B8300988E6C /* ApiTableViewScreen.swift */; };
+		0654F10327F52C3500988E6C /* APIcaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F10227F52C3500988E6C /* APIcaller.swift */; };
+		0654F10627F52D4B00988E6C /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F10527F52D4B00988E6C /* NotificationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0654F0ED27F41C4200988E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0654F0F627F41D6B00988E6C /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		0654F0FD27F51A8900988E6C /* ApiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewController.swift; sourceTree = "<group>"; };
+		0654F0FF27F51B8300988E6C /* ApiTableViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewScreen.swift; sourceTree = "<group>"; };
+		0654F10227F52C3500988E6C /* APIcaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIcaller.swift; sourceTree = "<group>"; };
+		0654F10527F52D4B00988E6C /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		0654F0DE27F41C4100988E6C /* PremierSoft test */ = {
 			isa = PBXGroup;
 			children = (
+				0654F10427F52C3F00988E6C /* Model */,
+				0654F10127F52C1800988E6C /* Handler */,
 				0654F0F827F5136700988E6C /* APITableViewPage */,
 				0654F0F327F41D2700988E6C /* FirstPage */,
 				0654F0DF27F41C4100988E6C /* AppDelegate.swift */,
@@ -106,6 +114,7 @@
 		0654F0F927F5138E00988E6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0654F0FF27F51B8300988E6C /* ApiTableViewScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +125,22 @@
 				0654F0FD27F51A8900988E6C /* ApiTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0654F10127F52C1800988E6C /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				0654F10227F52C3500988E6C /* APIcaller.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		0654F10427F52C3F00988E6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0654F10527F52D4B00988E6C /* NotificationModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0654F10027F51B8300988E6C /* ApiTableViewScreen.swift in Sources */,
 				0654F0F727F41D6B00988E6C /* FirstScreen.swift in Sources */,
+				0654F10627F52D4B00988E6C /* NotificationModel.swift in Sources */,
 				0654F0E427F41C4100988E6C /* ViewController.swift in Sources */,
+				0654F10327F52C3500988E6C /* APIcaller.swift in Sources */,
 				0654F0E027F41C4100988E6C /* AppDelegate.swift in Sources */,
 				0654F0FE27F51A8900988E6C /* ApiTableViewController.swift in Sources */,
 				0654F0E227F41C4100988E6C /* SceneDelegate.swift in Sources */,
