@@ -17,6 +17,7 @@
 		0654F10027F51B8300988E6C /* ApiTableViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F0FF27F51B8300988E6C /* ApiTableViewScreen.swift */; };
 		0654F10327F52C3500988E6C /* APIcaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F10227F52C3500988E6C /* APIcaller.swift */; };
 		0654F10627F52D4B00988E6C /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F10527F52D4B00988E6C /* NotificationModel.swift */; };
+		0654F10927F54CF200988E6C /* NotificationDetailCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F10827F54CF200988E6C /* NotificationDetailCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0654F0FF27F51B8300988E6C /* ApiTableViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewScreen.swift; sourceTree = "<group>"; };
 		0654F10227F52C3500988E6C /* APIcaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIcaller.swift; sourceTree = "<group>"; };
 		0654F10527F52D4B00988E6C /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		0654F10827F54CF200988E6C /* NotificationDetailCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		0654F0DE27F41C4100988E6C /* PremierSoft test */ = {
 			isa = PBXGroup;
 			children = (
+				0654F10727F54CBE00988E6C /* Cell */,
 				0654F10427F52C3F00988E6C /* Model */,
 				0654F10127F52C1800988E6C /* Handler */,
 				0654F0F827F5136700988E6C /* APITableViewPage */,
@@ -143,6 +146,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0654F10727F54CBE00988E6C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0654F10827F54CF200988E6C /* NotificationDetailCellTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,6 +228,7 @@
 				0654F0F727F41D6B00988E6C /* FirstScreen.swift in Sources */,
 				0654F10627F52D4B00988E6C /* NotificationModel.swift in Sources */,
 				0654F0E427F41C4100988E6C /* ViewController.swift in Sources */,
+				0654F10927F54CF200988E6C /* NotificationDetailCellTableViewCell.swift in Sources */,
 				0654F10327F52C3500988E6C /* APIcaller.swift in Sources */,
 				0654F0E027F41C4100988E6C /* AppDelegate.swift in Sources */,
 				0654F0FE27F51A8900988E6C /* ApiTableViewController.swift in Sources */,

@@ -13,7 +13,7 @@ class ApiTableViewScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .white
-        
+        tableView.register(NotificationDetailCellTableViewCell.self, forCellReuseIdentifier: NotificationDetailCellTableViewCell.identifier)
         return tableView
     }()
 

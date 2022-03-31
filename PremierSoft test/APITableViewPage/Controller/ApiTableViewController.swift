@@ -10,7 +10,7 @@ import UIKit
 class ApiTableViewController: UIViewController {
     
     var ApiScreen: ApiTableViewScreen?
-    var notificationsData: Any = []
+    var notificationsData: Notifications?
     
     override func loadView() {
         super.loadView()
@@ -27,7 +27,7 @@ class ApiTableViewController: UIViewController {
             do {
                 let notifications = try await NotificationsFetcher.fetchNotifications()
                 notificationsData = notifications
-                print(notificationsData)
+                print(notificationsData!.notifications)
             } catch {
                 print("Request failed with error \(error)")
             }
@@ -40,14 +40,14 @@ class ApiTableViewController: UIViewController {
 extension ApiTableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return self.notificationsData!.notifications.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let color: [UIColor] = [.orange, .blue, .green, .magenta]
-        let cell: UITableViewCell = UITableViewCell()
-        cell.backgroundColor = color[indexPath.row]
-        return cell
+        
+        let cell: NotificationDetailCellTableViewCell? = tableView.dequeueReusableCell(withIdentifier: NotificationDetailCellTableViewCell.identifier, for: indexPath) as? NotificationDetailCellTableViewCell
+        
+        return cell ?? UITableViewCell()
     }
     
     
