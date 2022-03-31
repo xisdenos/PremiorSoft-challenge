@@ -53,6 +53,12 @@ class NotificationDetailCellTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.notificationImageView)
     }
     
+    public func setUpCell(data: Content) {
+        self.IdLabel.text = data.id
+        self.contentLabel.text = data.content
+        
+    }
+    
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             
